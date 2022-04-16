@@ -7,10 +7,16 @@ import { FormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './Components/header/header.component';
+import { GithubHomeComponent } from './Components/github-home/github-home.component';
+import { GithubUserComponent } from './Components/github-user/github-user.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    GithubHomeComponent,
+    GithubUserComponent
   ],
   imports: [
     BrowserModule,
