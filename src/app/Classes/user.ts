@@ -1,7 +1,7 @@
 export class User {
 
   constructor(
-    public username: string,
+    public username: {},
     public useravatar : string,
     public userfollower: string
 
