@@ -1,27 +1,72 @@
-# GithubApp
+# Github Project
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
 
-## Development server
+### version vi.o.3
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## By Agnes Kaswii
+## Table of contents
 
-## Code scaffolding
++ [Description](#description)
++ [Installation Requirements](#installation)
++ [Technology used](#technology-used)
++ [Reference](#reference)
++ [Licence](#license)
++ [Authors Info](#author-Info)
++ [Contact Me](#contact-me)
++ [BDD](#bdd)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Description
+<p></p>
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Requirements
+* Access to the internet.
+* A computer,tablet,phone,Ipad or laptop.
 
-## Running unit tests
+### Installation Process
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## setup/installation instructions
+* you need to have git and nodejs installed.
+ 
 
-## Running end-to-end tests
+ [Go back to the top]( #Quotes-project)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ ## Technology Used
+ * HTML which was used to build the structure of the page.
+ * CSS  which was used to style the page.
+ * Bootstrap to help in styling.
+ * Angular
+ * TypeScript
+ 
 
-## Further help
+ ## Reference
+  * Bootstrap starter template.
+  * Angular Documentation.
+  
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  [Go Back to the top]( #Quotes-project)
+
+  ## License
+   copyright (c) 2022 License [click to view License](lICENSE)
+
+   [Go back to the top](#Quotes-project)
+
+   ## Authors Info
+
+   Slack profile - [Agnes Kaswii]
+
+  ( https://app.slack.com/client/T0101L740P4/C02TTF7MR8D/user_profile/U02UL5C9NE4)
+
+  Linked - [Agnes Kaswii]
+  (https://www.linkedin.com/in/agnes-kaswii-6442b91bb/)
+
+    ## Contact Me
+
+  Email - [Agnes Kaswii]
+  agneskaswii700@gmail.com
+
+  [Go back to the top](#Quotes-project)
+
+  ## BDD
+   * 

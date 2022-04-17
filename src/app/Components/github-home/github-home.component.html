@@ -1,4 +1,4 @@
-<app-header></app-header>
+(<app-header></app-header>
 
   <div class="content">
     <h1 class="text-center text-white">Search to see GIthub users and their Repositories</h1>
@@ -10,12 +10,13 @@
 <div class="container">
   <p class="text-center">Seach for a specific user and their Repos</p>
 <form #form="ngForm" (ngSubmit)="getAllUsers(form)">
-  <div class="mb-6">
+  <div class=" form-group mb-6">
     <label for="username" class="form-label text-white">Enter Username</label>
-    <input type="text" class="form-control" id="username" aria-describedby="emailHelp" name="user" ngModel>
+    <input type="text" required class="form-control" id="username" aria-describedby="emailHelp" name="user"ngModel>
     <div id="username" class="form-text">To search for a user enter their username.</div>
   </div>
-   <button type="submit" class="btn btn-primary"> Enter</button>
+ <button type="submit" class="btn btn-primary" > Enter</button> 
+
 </form>
 </div>
 
@@ -24,26 +25,42 @@
      
     </div>
   </div>
+{{user.username}}
+
   
 <div class="container last">
   <div class="row">
     <div class="col-md-4" *ngFor="let user of usersAll">
         <app-github-user
-            [username] = "user.login"
+          [username] = "user.login"
           [useravatar] = "user.avatar_url"
-          [userfollower] = "user.followers"
-          [userRepos] = "user.repos_url"
-          [userfollowing] = "user.following"
-          [userOrganization] = "user.organization">
-  
+          [userfollower] = "user.followers_url"
+          [userfollowing] = "user.following_url"
+          [userOrganization] = "user.organizations_url">
         </app-github-user>
-        <!-- <h5 class="card-title">Card title</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a> -->
-     
     </div>
   </div>
 </div>
+
+
+
+<!-- <div class="panel-body">
+  <div class="row">
+    <div class="col-md-12">
+      <div *ngFor="let repo of reposAll">
+        <app-github-user
+          [repoName] = "user.repo.html_url"
+           [repoDescription]="user.repoDescription"
+           [repoForks]="user.repoForks"
+           [repoWatchers]="user.repoWatchers">
+        </app-github-user>
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
 
 
 

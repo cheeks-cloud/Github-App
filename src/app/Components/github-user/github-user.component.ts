@@ -7,12 +7,17 @@ import { Component, OnInit,Input } from '@angular/core';
 })
 export class GithubUserComponent implements OnInit {
 
-@Input () username!: {}
+@Input () username!: string
 @Input () useravatar! : string
 @Input () userfollower!: string
-@Input () userRepos!: string
 @Input () userfollowing!: string
 @Input () userOrganization!: string
+
+
+@Input () repoName!: string
+@Input () repoWatchers!: string
+@Input () repoDescription!: string
+@Input () repoForks!: number
 
 
 

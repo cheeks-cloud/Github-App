@@ -10,13 +10,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './Components/header/header.component';
 import { GithubHomeComponent } from './Components/github-home/github-home.component';
 import { GithubUserComponent } from './Components/github-user/github-user.component';
+import { DatePipePipe } from './Pipes/date-pipe.pipe';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     GithubHomeComponent,
-    GithubUserComponent
+    GithubUserComponent,
+    DatePipePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

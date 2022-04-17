@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  apiKey:'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'
+  apiUrl:"https://api.github.com/users?q=api_key=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"
+
 };
 
 /*
