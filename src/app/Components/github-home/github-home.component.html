@@ -5,7 +5,9 @@
   <div class=" form-group mb-6">
     <label for="username" class="form-label text-white">Enter Username</label>
     <input type="text" required class="form-control" id="username" 
-    [(ngModel)]="username" name="username">
+    [(ngModel)]="username" name="username"aria-describedby="username">
+    <div id="username" class="form-text"> Enter to see a User Details.</div>
+
   </div>
   <button type="submit" class="btn btn-outline-primary btn-lg btn-block"> Search </button>
 </form>
