@@ -1,8 +1,0 @@
-.card{
-  border: 2px solid blue;
-  background-color:rgb(0,0,0,0);
-  color: white;
-}
-.card:hover{
-  border: 2px solid  white;
-}
