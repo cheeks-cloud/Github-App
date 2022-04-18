@@ -1,12 +1,23 @@
+ 
+<div class="container form">
+  <p class="text-center text-white">Seach for a specific user and their Repos</p>
+<form #form="ngForm" name ="form" (ngSubmit)="search(username)">
+  <div class=" form-group mb-6">
+    <label for="username" class="form-label text-white">Enter Username</label>
+    <input type="text" required class="form-control" id="username" 
+    [(ngModel)]="username" name="username">
+  </div>
+  <button type="submit" class="btn btn-outline-primary btn-lg btn-block"> Search </button>
+</form>
+</div>
 
-   
+
+
  <div class="container last">
   <div class="row">
     <div class="col-md-4">
       <div>
         <app-github-user
-       
-     
        [useravatar] = "usersAll.avatar_url"
        [username] = "usersAll.login"
        [userName] = "usersAll.name"
@@ -21,22 +32,11 @@
 </div>
 
 
-<div class="container">
-  <p class="text-center text-success">Seach for a specific user and their Repos</p>
-<form #form="ngForm" name ="form" (ngSubmit)="search(username)">
-  <div class=" form-group mb-6">
-    <label for="username" class="form-label text-white">Enter Username</label>
-    <input type="text" required class="form-control" id="username" 
-    [(ngModel)]="username" name="username">
-  </div>
-  <button type="submit" class="btn btn-primary btn-lg btn-block"> Enter</button>
-</form>
-</div>
 
 
 <div class="container">
   <div class="row">
-    <div class="things col-md-4">
+    <div class="things">
       <div *ngFor="let repo of reposAll"> 
         <app-git-repo
           [repoName] = "repo.name"

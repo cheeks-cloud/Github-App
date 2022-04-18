@@ -13,9 +13,6 @@ import { NgForm,NgModel } from '@angular/forms';
 
 export class GithubHomeComponent implements OnInit {
 
-  user!:User;
-  repo!:Repo;
-
   usersAll:User = new User("","","","","","")
   reposAll:Repo[] = []
   username = "";

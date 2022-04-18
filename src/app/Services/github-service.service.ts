@@ -12,14 +12,7 @@ import{ User } from 'src/app/Classes/user';
   providedIn: 'root'
 })
 export class GithubServiceService {
-
-// username = "cheeks-cloud"
-
  username = "";
-// userName:any
-// username= this.updateUsername(this.username)
-
-
 constructor( private http: HttpClient) { }
 
  baseUrl:string = `https://api.github.com/users/`
@@ -34,8 +27,7 @@ getRepo(username:string):Observable<any>{
 }
 updateUsername(username:any){
   this.username = username;
-  // console.log(this.username);
-   
+  
   }
 
 

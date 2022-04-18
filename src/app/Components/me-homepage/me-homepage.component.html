@@ -1,11 +1,12 @@
 
-<app-header></app-header>
+<!-- <app-header></app-header> -->
 
-<div class="content">
-  <h1 class="text-center text-white">Search to see GIthub users and their Repositories</h1>
 
+<div class="jumbotron">
+  <div class="content">
+    <h1 class="text-center text-white">Search to see GIthub users and their Repositories</h1>
+  </div>
 </div>
-
 
 <div class="container lastie text-white">
   <div class="row">
@@ -27,7 +28,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="things col-md-4">
+    <div class="things">
       <div *ngFor="let repo of reposAll"> 
         <app-git-repo
           [repoName] = "repo.name"
@@ -44,4 +45,4 @@
 
 
 
-<!-- <app-github-home></app-github-home> -->
+

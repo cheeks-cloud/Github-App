@@ -1,15 +1,14 @@
  <div class="container">
-    <img [src]="useravatar" class="image" alt="">
-    <div class="data">
-        <h3> {{userName}}  </h3>
-        <h2> {{username}}  </h2>
-        <p>  Number of Followers:{{ userfollower }}  </p>
-        <p>  User Follows: {{userfollowing}} </p>
-        <p>  User Belongs to {{userOrganization}} Organization </p>
+    <img [src]="useravatar" class="image" >
+    <div  class="data">
+        <h3> User is :<span style="color:white"> {{userName}} </span></h3>
+        <h5> Their username is:<span style="color:white" >{{username}}</span>  </h5>
+        <p>  Number of Followers:<span style="color:white"> {{ userfollower }} </span> </p>
+        <p>  User Follows:<span style="color:white"> {{userfollowing}}</span> </p>
+        <p>  User Belongs to<span style="color:white">{{userOrganization}} </span> Organization  </p>
 
     </div>
-   
-    
+  
 </div>
        
 

@@ -5,6 +5,8 @@ export class Repo{
     public description: string,
     public  html_url: string,
     public homepage:string,
+
+    public dayPosted:Date
     
   ){
 

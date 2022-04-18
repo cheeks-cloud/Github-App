@@ -7,18 +7,16 @@ export class HighlightDirective {
 
   constructor( private elem:ElementRef) { }
 
-  @HostListener('click')onclick(){
-    this.textColor('Blue')
-  }
-  
- 
-  @HostListener("dblclick") onDoubleClick(){
-    this.textColor('Red') 
-  }
+  // @HostListener('click')onclick(){
+  //   this.backgroundColor('Blue')
+  // }
+  // @HostListener('dblclick')ondblclick(){
+  //   this.backgroundColor('rgb(0,0,0,0)')
+  // }
    
  
-  private textColor(action:string){
-    this.elem.nativeElement.style.color = action;
+  // private backgroundColor(action:string){
+  //   this.elem.nativeElement.style.backgroundColor = action;
     
-  }
+  // }
 }
