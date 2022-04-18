@@ -1,13 +1,17 @@
 .data{
  background-color: blue;
- Width:160%;
- margin-left:50%;
- padding:30px;
+ Width:200%;
+ margin-left:60%;
+ padding:40px;
  color: black;
 
 }
 .image{
-  border: 2px solid white;
-  margin-left:80%;
+  border: 1px solid white;
+  
 }
 
+.container{
+  display: flex;
+  justify-content:space-between;
+}
