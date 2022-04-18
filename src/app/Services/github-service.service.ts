@@ -16,14 +16,14 @@ export class GithubServiceService {
 constructor( private http: HttpClient) { }
 
  baseUrl:string = `https://api.github.com/users/`
- repoUrl:string = `https://api.github.com/users/`
+//  repoUrl:string = `https://api.github.com/users/`
 
 
 getUser(username:string):Observable<any>{
   return this.http.get<any>(this.baseUrl + `${username}`)
 }
 getRepo(username:string):Observable<any>{
-  return this.http.get<any>(this.repoUrl + `${username}`+ "/repos")
+  return this.http.get<any>(this.baseUrl+ `${username}`+ "/repos")
 }
 updateUsername(username:any){
   this.username = username;

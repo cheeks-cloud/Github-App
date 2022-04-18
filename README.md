@@ -16,7 +16,7 @@
 + [BDD](#bdd)
 
 ## Description
-<p></p>
+<p> This is a project that uses Angular to search for github users and their Repos </p>
 
 ## Installation
 
@@ -30,7 +30,7 @@
 * you need to have git and nodejs installed.
  
 
- [Go back to the top]( #Quotes-project)
+ [Go back to the top]( #Github-App)
 
  ## Technology Used
  * HTML which was used to build the structure of the page.
@@ -45,12 +45,12 @@
   * Angular Documentation.
   
 
-  [Go Back to the top]( #Quotes-project)
+  [Go Back to the top]( #Github-App)
 
   ## License
    copyright (c) 2022 License [click to view License](lICENSE)
 
-   [Go back to the top](#Quotes-project)
+   [Go back to the top](#Github-App)
 
    ## Authors Info
 
@@ -66,7 +66,10 @@
   Email - [Agnes Kaswii]
   agneskaswii700@gmail.com
 
-  [Go back to the top](#Quotes-project)
+  [Go back to the top](#Github-App)
 
   ## BDD
-   * 
+   * Create component.
+   * Create Directve.
+   *  Create Pipe.
+   * Create routing.
