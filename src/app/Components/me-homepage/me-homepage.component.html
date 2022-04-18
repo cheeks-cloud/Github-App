@@ -1,14 +1,19 @@
 
-   
- <!-- <div class="container last">
+<app-header></app-header>
+
+<div class="content">
+  <h1 class="text-center text-white">Search to see GIthub users and their Repositories</h1>
+
+</div>
+
+
+<div class="container lastie text-white">
   <div class="row">
     <div class="col-md-4">
       <div>
-        <app-github-user
-       
-     
-       [useravatar] = "usersAll.avatar_url"
+        <app-github-user 
        [username] = "usersAll.login"
+       [useravatar] = "usersAll.avatar_url"
        [userName] = "usersAll.name"
        [userfollower] = "usersAll.followers"
        [userfollowing] = "usersAll.following"
@@ -18,21 +23,7 @@
       </div>
     </div>
   </div>
-</div> -->
-
-
-<!-- <div class="container">
-  <p class="text-center text-success">Seach for a specific user and their Repos</p>
-<form #form="ngForm" name ="form" (ngSubmit)="search(username)">
-  <div class=" form-group mb-6">
-    <label for="username" class="form-label text-white">Enter Username</label>
-    <input type="text" required class="form-control" id="username" 
-    [(ngModel)]="username" name="username">
-  </div>
-  <button type="submit" class="btn btn-primary btn-lg btn-block"> Enter</button>
-</form>
 </div>
-
 
 <div class="container">
   <div class="row">
@@ -47,8 +38,10 @@
        </div>
     </div>
   </div>
-</div>  -->
+</div> 
 
 
 
 
+
+<!-- <app-github-home></app-github-home> -->

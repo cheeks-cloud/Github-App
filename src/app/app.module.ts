@@ -12,6 +12,8 @@ import { GithubHomeComponent } from './Components/github-home/github-home.compon
 import { GithubUserComponent } from './Components/github-user/github-user.component';
 import { DatePipePipe } from './Pipes/date-pipe.pipe';
 import { HighlightDirective } from './highlight.directive';
+import { GitRepoComponent } from './Components/git-repo/git-repo.component';
+import { MeHomepageComponent } from './Components/me-homepage/me-homepage.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HighlightDirective } from './highlight.directive';
     GithubHomeComponent,
     GithubUserComponent,
     DatePipePipe,
-    HighlightDirective
+    HighlightDirective,
+    GitRepoComponent,
+    MeHomepageComponent
   ],
   imports: [
     BrowserModule,

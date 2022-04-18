@@ -15,49 +15,55 @@ export class GithubHomeComponent implements OnInit {
 
   user!:User;
   repo!:Repo;
-  usersAll:any
 
-  // reposAll:any = [];
-  
-  
+  usersAll:User = new User("","","","","","")
+  reposAll:Repo[] = []
+  username = "";
+    
   constructor( private userService: GithubServiceService ) { 
-    this.userService=userService;
-   
+ 
   }
 
   ngOnInit(): void {
-    this.user = this.userService.user
-  }
-  
-
-    getAllUsers( form:NgForm){
-      if ( '')
-      {alert("Please select")
-    }else
-      this.userService.getGithubUser(this.user)
-      console.log(this.user)
-        form.reset()
-    }
-
-      }
-
-   
-  
     
-    // get original user
+  }
+  search(username:any){    
+    this.userService.updateUsername(username)
+    console.log(username)
+       
+    this.userService.getUser(username).subscribe((usersAll:any)=>{
+      this.usersAll = usersAll;
+      console.log(usersAll);
+    })
+   
+    this.userService.getRepo(username).subscribe((reposAll:any)=>{
+      this.reposAll = reposAll;
+      console.log(reposAll);
 
-      // this.userService.getGithubUser().subscribe((user: any) => {
-      //   this.usersAll = user
-      //   console.log(user.name)
-      //   // form.reset()
-      // });
-  
-    //   this.userService. getGithubRepos().subscribe(repo => {
-    //     this.reposAll = repo
-    //     console.log(repo)
-  
-    //     });
+      // form.reset()
+    })
+   }
 
+
+
+ 
+
+  // search(username:any){
+  //   console.log(username);
+  // }
+
+
+
+
+
+
+
+
+
+
+
+}
+   
 
 
     

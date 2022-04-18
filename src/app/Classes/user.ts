@@ -1,17 +1,17 @@
 export class User {
 
   constructor(
-    // public name: string,
-    public username: string,
-    public useravatar : string,
-    public userfollower: string,
-    public userfollowing : string,
-    public userOrganization: string
+    public name: string,
+    public login: string,
+    public avatar_url : string,
+    public followers: string,
+    public following : string,
+    public location: string
 
   ){
 
   }
   
-
+  
 
 }
